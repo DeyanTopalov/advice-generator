@@ -24,7 +24,15 @@ const config: Config = {
         "clr-grayish-600": withOpacity("--grayish-600")({}),
         "clr-grayish-800": withOpacity("--grayish-800")({}),
       },
-
+      keyframes: {
+        fadein: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "100" },
+        },
+      },
+      animation: {
+        fadein: "fadein 600ms ease-in ",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
