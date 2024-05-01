@@ -7,6 +7,8 @@ type childrenProps = {
 };
 
 type Advice = {
-  id: number;
-  advice: string;
+  slip: {
+    id: number;
+    advice: string;
+  };
 };
