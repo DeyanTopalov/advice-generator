@@ -21,7 +21,6 @@ function useFetch<T>(url: string): FetchResponse<T> {
         }
         const data: T = await response.json();
         setData(data);
-        console.log("Fetched data:", data);
       } catch (error) {
         setError(error as Error);
       } finally {
@@ -36,5 +35,3 @@ function useFetch<T>(url: string): FetchResponse<T> {
 }
 
 export default useFetch;
-
-// type UseFetchProps = string; // Adjust to your specific options
